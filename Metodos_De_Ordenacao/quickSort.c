@@ -47,7 +47,7 @@ int main(){
     }
 
     /*CHAMA A FUNCAO PARA REALIZAR A ORDENACAO DOS DADOS*/
-    quickSort(&dados,0,quant-1);
+    quickSort(dados,0,quant-1);
     
     printf("\n");
     
