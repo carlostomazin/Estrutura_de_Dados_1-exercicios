@@ -19,10 +19,9 @@ int main()
 {
     int bub[TAM], ctd;
 
-    for (ctd = 0; ctd < TAM; ctd++)
-    {                           /*EXEMPLOS DE ENTRADA*/
-        scanf("%d", &bub[ctd]); //1 3 5 8 9 4 7 6 10 2
-    }                           //10 8 4 6 5 1 3 2 7 9
+    for (ctd = 0; ctd < TAM; ctd++){    /*EXEMPLOS DE ENTRADA*/
+        scanf("%d", &bub[ctd]);         //1 3 5 8 9 4 7 6 10 2
+    }                                   //10 8 4 6 5 1 3 2 7 9
 
     printf("\n");
 

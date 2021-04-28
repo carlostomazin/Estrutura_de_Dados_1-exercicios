@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define quant 10
+#define TAM 10
 
 
 void quickSort(int *vetor, int esquerda, int direita){
@@ -36,23 +36,18 @@ void quickSort(int *vetor, int esquerda, int direita){
 
 int main(){
 
-    int dados[quant];
+    int dados[TAM];
     int ctd;
 
     printf("Insira os valores: \n");
 
-    /*PEGA OS DADOS*/
-    for(ctd = 0; ctd < quant; ctd++){
-        scanf("%d",&dados[ctd]);
-    }
+    for(ctd = 0; ctd < TAM; ctd++){     /*EXEMPLOS DE ENTRADA*/
+        scanf("%d",&dados[ctd]);        //1 3 5 8 9 4 7 6 10 2
+    }                                   //10 8 4 6 5 1 3 2 7 9
 
-    /*CHAMA A FUNCAO PARA REALIZAR A ORDENACAO DOS DADOS*/
-    quickSort(dados,0,quant-1);
+    quickSort(dados,0,TAM-1);
     
-    printf("\n");
-    
-     /*MONTRA OS RESULTADO*/
-    for(ctd = 0; ctd < quant; ctd++){
+    for(ctd = 0; ctd < TAM; ctd++){
         printf("%d ",dados[ctd]);
     }
 
