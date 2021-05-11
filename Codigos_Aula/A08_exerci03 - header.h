@@ -2,7 +2,7 @@ typedef struct _no{
     int dado;
     struct _no *proximo;
 } No;
-No *novo;
+
 void inicializaLista(No **);
 int listaVazia(No *);
 
