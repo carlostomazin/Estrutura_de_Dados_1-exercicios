@@ -16,6 +16,7 @@ void imprimiLista(No *);
 
 void insereInicio(No **lista, int dado){
     No *novo;
+    
     novo = (No *)malloc(size(No));
     novo->dado = dado;
 
@@ -25,7 +26,6 @@ void insereInicio(No **lista, int dado){
         novo->proximo = *lista;
     }
     *lista = novo;
-
 }
 
 void insereFinal(No **,int);
