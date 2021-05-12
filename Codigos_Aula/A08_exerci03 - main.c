@@ -2,7 +2,7 @@
 /* **** principal - arquivo A08lista.c  **** */
 /* ***************************************** */
 #include <stdio.h>
-#include "A08operac.c"
+#include "A08_exerci03 - operac.c"
 
 int main () {
 
@@ -13,8 +13,8 @@ int main () {
     imprimeLista(lista);
 
 
-    // aqui estão algumas operações com a lista. 
-    // faça teste com todas as operações codificadas 
+    // aqui estï¿½o algumas operaï¿½ï¿½es com a lista. 
+    // faï¿½a teste com todas as operaï¿½ï¿½es codificadas 
 
 
     insereInicio(&lista, 1);

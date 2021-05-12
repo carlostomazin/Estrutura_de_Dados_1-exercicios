@@ -29,7 +29,10 @@ void insereInicio(No **lista, int dado){
     *lista = novo;
 }
 
-void insereFinal(No **,int);
+void insereFinal(No **lista,int dado){
+
+    
+}
 
 void removeInicio(No **);
 void removeFinal(No **);
