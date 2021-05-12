@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "A08_exerci03 - header.h"
 
 void inicializaLista(No **lista){
@@ -17,7 +18,7 @@ void imprimiLista(No *);
 void insereInicio(No **lista, int dado){
     No *novo;
     
-    novo = (No *)malloc(size(No));
+    novo = (No *)malloc(sizeof(No));
     novo->dado = dado;
 
     if(listaVazia(*lista)){
