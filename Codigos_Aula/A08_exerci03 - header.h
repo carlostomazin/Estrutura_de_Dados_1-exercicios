@@ -1,3 +1,4 @@
+
 typedef struct _no{
     int dado;
     struct _no *proximo;
