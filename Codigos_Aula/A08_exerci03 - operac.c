@@ -185,10 +185,9 @@ void removeInicio(No **Lista){
     if(listaEhVazia(*Lista))
 		return;
     
-
+	printf("Removendo %d\n",atual->dado);
     *Lista = atual->proximo;
-    *Lista = NULL;
+    atual = NULL;
      
     free(atual);
-
 }
