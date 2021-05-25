@@ -12,8 +12,6 @@ void removeInicio(No **Lista){
 	printf("Removendo %d\n",atual->dado);
     /*Passando o INICIO para o segundo elemento da lista.(Usando o apontamento do primeiro elemento)*/
     *Lista = atual->proximo;
-    /*Removendo o primeiro elemento da lista.*/
-    atual = NULL;
 
     /*Liberando a memória do primeiro elemento.*/
     free(atual);
