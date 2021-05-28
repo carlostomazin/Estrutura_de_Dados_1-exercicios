@@ -21,7 +21,7 @@ void removeInicio(No**);
 void removeFinal(No**);
 void removeEspecifico(No**, int);
 
-//No* pesquisaElemento(No*, int); // aula 10
-//void esvaziaLista(No**);  // aula 10
+No* pesquisaElemento(No*, int); // aula 10
+void esvaziaLista(No**);  // aula 10
 
 #endif

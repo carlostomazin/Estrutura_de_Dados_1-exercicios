@@ -47,11 +47,9 @@ void removeFinal(No **lista){
 	
 	/* se tiver apenas um elemento na lista */
 	if(atual == *lista){
-	  printf("Removendo %d\n",atual->dado);
       *lista = NULL;
     }
 	else{ // caso contrário, o penultimo nó deve ter proximo = NULL
-	   printf("Removendo %d\n",atual->dado);
        posAnterior->proximo = NULL;
     }
 	/* liberar memória do nó a ser removido */   
@@ -180,6 +178,7 @@ void insereFinal(No **lista,int dado){
 
 void removeInicio(No **Lista){
 
+
     No *atual = *Lista;
 
     if(listaEhVazia(*Lista))
@@ -190,4 +189,44 @@ void removeInicio(No **Lista){
     atual = NULL;
      
     free(atual);
+}
+
+No* pesquisaElemento(No *Lista, int dado){
+
+	No *aux = Lista;
+
+	while ((aux != NULL) && (aux->dado != dado)){
+		aux = aux->proximo;
+	}
+
+	return aux;
+	
+}
+
+void esvaziaLista(No **Lista){
+
+	while(!listaEhVazia(*Lista)){
+		removeFinal(Lista);
+	}
+}
+
+void removeEspecifico(No **Lista, int dado){
+	
+	No *aux = *Lista;
+	No *anterior = *Lista;
+
+	while ((aux != NULL) && (aux->dado != dado)){
+		anterior = aux;
+		aux = aux->proximo;
+	}
+
+	if (aux == NULL){
+		return printf("Elemento nao encontrado\n");
+	}else if (anterior == *Lista){
+		*Lista = aux->proximo;
+	}else{
+		anterior->proximo = aux->proximo;
+	}
+	
+	free(aux);
 }

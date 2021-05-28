@@ -3,7 +3,7 @@
 
 int main () {
 
-    No *inicio;//, *aux;
+    No *inicio, *aux;
 
     inicializaLista(&inicio);
     imprimeLista(inicio);
@@ -75,7 +75,7 @@ int main () {
     printf("\nInsere 14 na posicao 4\n");    
     inserePosicao(&inicio, 4, 14);
     imprimeLista(inicio);
-    /*
+    
     printf("\nRemove o elemento 'dado = 15'\n");    
     removeEspecifico(&inicio, 15);
     imprimeLista(inicio);
@@ -91,16 +91,19 @@ int main () {
     printf("\nRemove 'dado = 18'\n");    
     removeEspecifico(&inicio, 18);
     imprimeLista(inicio);
-    */
+    
 
-/*  RoTINA ESVAZIAR A LISTA SERÁ 
-    CODIFICADA NA PRÓXIMA AULA 
-*/
+    //RoTINA ESVAZIAR A LISTA SERÁ 
+    //CODIFICADA NA PRÓXIMA AULA
+    printf("\n\nEsvaziando a lista\n");
+	esvaziaLista(&inicio);
+    imprimeLista(inicio);
+
 
 /*  PARA EXECUTAR ESSA PARTE DO PROGRAMA
     BASTA COMENTAR AS CHAMADAS ANTERIORES
 */
-    /*
+    
     printf("\nInsere 50\n");    
     insereOrdenado(&inicio, 50);
     imprimeLista(inicio);
@@ -128,12 +131,12 @@ int main () {
     printf("\nInsere 54\n");    
     insereOrdenado(&inicio, 54);
     imprimeLista(inicio);
-    */
+    
     
 
 
-/*  ROTINA DE PESQUISA SERÁ CODIFICADA NA 
-    PRÓXIMA AULA
+    //ROTINA DE PESQUISA SERÁ CODIFICADA NA 
+    //PRÓXIMA AULA
     
     aux = pesquisaElemento(inicio, 45);
     if (aux == NULL) 
@@ -162,7 +165,7 @@ int main () {
     
 	esvaziaLista(&inicio);
     imprimeLista(inicio);
-*/    
+
     return 0;
 
 } /* fim da funcao main */
