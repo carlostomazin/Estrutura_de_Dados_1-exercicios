@@ -9,7 +9,7 @@ typedef struct{
 }aluno;
 
 int buscaBinaria(aluno *vetdados,int inicio,int fim,int alvo){
-    int meio,ctd;
+    int meio;
 
     meio = (int)(inicio + fim) /2;
 
