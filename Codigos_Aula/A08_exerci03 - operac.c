@@ -109,7 +109,6 @@ void inserePosicao(No **lista, int posicao, int dado){
 		posAnterior = atual;
 		atual = atual->proximo;
 		pos++;
-		
 	}
 	
 	/* insere o novo noh na posicao encontrada */
